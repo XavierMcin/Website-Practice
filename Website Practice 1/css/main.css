@@ -290,7 +290,7 @@ html, body {
 
 .featured {
     width: 1440px;
-    height: 793px;
+    height: 993px;
     background: pink;
 }
 
@@ -326,19 +326,19 @@ html, body {
     margin: 0;
 }
 
-.thumbnail.thumb1 {
+.top .thumbnail.thumb1 {
     background-image: url(../img/pexels-photo-90819.jpeg);
 }
 
-.thumbnail.thumb2 {
+.top .thumbnail.thumb2 {
     background-image: url(../img/pexels-photo-177684.jpeg);
 }
 
-.thumbnail.thumb3 {
+.top .thumbnail.thumb3 {
     background-image: url(../img/pexels-photo-24486.jpg);
 }
 
-.thumbnail.thumb4 {
+.top .thumbnail.thumb4 {
     background-image: url(../img/pexels-photo.jpg);
 }
 
@@ -361,11 +361,43 @@ html, body {
     color: #000;
 }
 
+.bottom {
+    position: relative;
+    top: 200px;
+}
 
+.bottom article:last-of-type {
+    margin-right: 0;
+}
 
+.bottom .thumbnail.thumb1 {
+    background-image: url(../img/pexels-photos.jpg);
+}
 
+.bottom .thumbnail.thumb2 {
+    background-image: url(../img/pexels-photo.png);
+}
 
+.bottom .thumbnail.thumb3 {
+    background-image: url(../img/pexels-photo-27765.jpg);
+}
 
+.bottom .thumbnail.thumb4 {
+    background-image: url(../img/pexels-photo-67444.jpeg);
+}
+
+.bottom article h2 {
+    width: 338px;
+    position: relative;
+    top: 20px;
+    font-size: 14pt;
+    text-align: left;
+}
+
+.bottom article h2 a {
+    text-decoration: none;
+    color: #000;
+}
 
 
 
