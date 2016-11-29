@@ -95,12 +95,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
+
 /* RESET */
 
 html, body {
     margin: 0;
     padding: 0;
 }
+
+
+
+
 
 /* NAVIGATION */
 
@@ -217,7 +224,16 @@ html, body {
     border-right: 0;
 }
 
+
+
+
+
 /* BANNER IMAGE */
+
+
+
+
+
 
 #banner {
     height: 988px;
@@ -264,13 +280,113 @@ html, body {
     position: relative;
 }
 
+
+
+
 /* First Section */
+
+
+
 
 .featured {
     width: 1440px;
     height: 793px;
     background: pink;
 }
+
+.featured h2 {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+
+.featured .thumbnail {
+    width: 338px;
+    height: 213px;
+    background: orange;
+}
+
+.featured article {
+    display: inline-block;
+    margin-right: 25px;
+    height: 314px;
+}
+
+.top {
+    position: relative;
+    top: 100px;
+}
+
+.top article:last-of-type {
+    margin-right: 0;
+}
+
+.thumbnail {
+    margin: 0;
+}
+
+.thumbnail.thumb1 {
+    background-image: url(../img/pexels-photo-90819.jpeg);
+}
+
+.thumbnail.thumb2 {
+    background-image: url(../img/pexels-photo-177684.jpeg);
+}
+
+.thumbnail.thumb3 {
+    background-image: url(../img/pexels-photo-24486.jpg);
+}
+
+.thumbnail.thumb4 {
+    background-image: url(../img/pexels-photo.jpg);
+}
+
+.thumbnail a {
+    height: 213px;
+    display: block;
+}
+
+
+.top article h2 {
+    width: 338px;
+    position: relative;
+    top: 20px;
+    font-size: 14pt;
+    text-align: left;
+}
+
+.top article h2 a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -279,6 +395,10 @@ html, body {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.parent {
+    overflow: hidden;
+}
 
 /*
  * Hide visually and from screen readers
