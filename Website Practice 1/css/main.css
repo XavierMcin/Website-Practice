@@ -275,7 +275,7 @@ html, body {
 #wrapper {
     width: 1440px;
     margin: auto;
-    background: blue;
+    /*background: blue;*/
     height: 1660px;
     position: relative;
 }
@@ -436,33 +436,114 @@ article.parent img {
 .middle {
     height: 496px;
     width: 1440px;
-    background: orange;
     position: relative;
     border-bottom: 1px solid #b8b8b8;
-}
-
-.left {
-    height: 497px;
-    width: 719.5px;
-    background: purple;
-    display: inline-block;
-    border-right: 1px solid #b8b8b8;
 }
 
 .middle div {
     height: 382px;
     width: 575px;
-    background: green;
     margin: auto;
+}
+
+.middle div a {
+    display: block;
+    height: 268px;
+}
+
+.middle div.element {
+    text-align: center;
+}
+
+.middle p {
+    position: relative;
+    top: -25px;
+    color: #b8b8b8;
+    cursor: pointer;
+    display: inline;
+    font-size: 10pt;
+}
+
+.middle p:hover {
+    color: #000;
+}
+
+.middle img {
+    position: relative;
+    top: -25px;
+    left: 10px;
+}
+
+.left {
+    height: 497px;
+    width: 719.5px;
+    display: inline-block;
+    border-right: 1px solid #b8b8b8;
+    position: relative;
+}
+
+.leftImage div {
+    background-image: url(../img/shutters-caribbean-architecture-door-37827.jpeg);
+    background-size: cover;
+    width: 426px;
+    height: 268px;
+}
+
+.leftImage h2 {
+    font-size: 22pt;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 10px;
+
 }
 
 .right {
     height: 497px;
     width: 719.5px;
-    background: lightblue;
     float: right;
     display: inline-block;
 }
+
+.rightImage div {
+    background-image: url(../img/pexels-photo-48632.jpeg);
+    background-size: cover;
+    width: 426px;
+    height: 268px;
+}
+
+.rightImage h2 {
+    font-size: 22pt;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
