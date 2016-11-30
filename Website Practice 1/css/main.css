@@ -275,7 +275,7 @@ html, body {
 #wrapper {
     width: 1440px;
     margin: auto;
-    /*background: blue;*/
+    background: blue;
     height: 1660px;
     position: relative;
 }
@@ -290,7 +290,8 @@ html, body {
 
 .featured {
     width: 1440px;
-    height: 993px;
+    height: 917px;
+    border-bottom: 1px solid #b8b8b8;
 }
 
 .featured h2 {
@@ -298,6 +299,12 @@ html, body {
     text-align: center;
     position: relative;
     top: 80px;
+}
+
+.featured > h2 {
+    font-size: 25pt;
+    font-weight: lighter;
+    letter-spacing: 3px;
 }
 
 .featured .thumbnail {
@@ -422,6 +429,41 @@ article.parent img {
 
 
 
+/* Second , Middle Section */
+
+
+
+.middle {
+    height: 496px;
+    width: 1440px;
+    background: orange;
+    position: relative;
+    border-bottom: 1px solid #b8b8b8;
+}
+
+.left {
+    height: 497px;
+    width: 719.5px;
+    background: purple;
+    display: inline-block;
+    border-right: 1px solid #b8b8b8;
+}
+
+.middle div {
+    height: 382px;
+    width: 575px;
+    background: green;
+    margin: auto;
+}
+
+.right {
+    height: 497px;
+    width: 719.5px;
+    background: lightblue;
+    float: right;
+    display: inline-block;
+}
+
 
 
 
@@ -452,6 +494,15 @@ article.parent img {
 .parent {
     overflow: hidden;
 }
+
+/* vertical center anything*/
+
+.element {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 /*
  * Hide visually and from screen readers
