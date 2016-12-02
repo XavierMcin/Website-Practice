@@ -278,7 +278,7 @@ html, body {
 #wrapper {
     width: 1440px;
     margin: auto;
-    background: blue;
+    /*background: blue;*/
     height: 4960px;
     position: relative;
 }
@@ -330,12 +330,10 @@ html, body {
 .top article:last-of-type {
     margin-right: 0;
     position: relative;
-    top: -25px;
 }
 
 .top article:first-of-type {
     position: relative;
-    top: -25px;
 }
 
 .thumbnail {
@@ -504,7 +502,7 @@ article.parent img {
     font-weight: lighter;
     text-align: center;
     margin-top: 10px;
-
+    color: #000;
 }
 
 .right {
@@ -526,7 +524,7 @@ article.parent img {
     font-weight: lighter;
     text-align: center;
     margin-top: 10px;
-
+    color: #000;
 }
 
 
@@ -564,6 +562,7 @@ article.parent img {
     font-size: 23pt;
     margin-left: 30px;
     margin-top: 45px;
+    color: #000;
 }
 
 .bulkArticles article div p {
@@ -625,14 +624,62 @@ article.parent img {
 
 
 
+/* After bulk */
 
 
+#afterBulk {
+    width: 1440px;
+    height: 400px;
+    text-align: center;
+}
 
+#afterBulk h2 {
+    margin: 0;
+    position: relative;
+    top: 40px;
+    font-size: 23pt;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    color: #000;
+}
 
-t 
+#afterBulk p:first-of-type {
+    position: relative;
+    top: 25px;
+    color: #222;
+}
 
+#afterBulk p:first-of-type a {
+    color: #b8b8b8;
+}
 
+#afterBulk p:nth-child(2) {
+    color: #222;
+    margin-top: 30px;
+}
 
+#afterBulk h1 a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    top: 20px
+}
+
+#afterBulk h1 a:hover {
+    color: #b8b8b8;
+}
+
+#afterBulk div {
+    width: 1440px;
+    height: 235px;
+    position: relative;
+}
+
+#afterBulk div p {
+    width: 950px;
+    font-size: 16pt;
+    margin: auto;
+}
 
 
 
