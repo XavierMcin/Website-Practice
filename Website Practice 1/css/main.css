@@ -278,7 +278,7 @@ html, body {
 #wrapper {
     width: 1440px;
     margin: auto;
-    /*background: blue;*/
+    background: blue;
     height: 3960px;
     position: relative;
 }
@@ -532,6 +532,7 @@ article.parent img {
 .bulkWrapper {
     width: 1440px;
     height: 2442px;
+    position: relative;
 }
 
 .bulkArticles article {
@@ -589,6 +590,29 @@ article.parent img {
 
 
 
+
+/* aside bar */
+
+
+
+
+.sticky1 {
+    width: 454px;
+    height: 454px;
+    background: purple;
+    right: 0;
+    top: 50px;
+    position: absolute;
+}
+
+.sticky2 {
+    background: purple;
+    width: 454px;
+    height: 241px;
+    position: absolute;
+    top: 539px;
+    right: 0;
+}
 
 
 
