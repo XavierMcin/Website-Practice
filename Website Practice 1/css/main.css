@@ -103,7 +103,6 @@ textarea {
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 
@@ -271,13 +270,16 @@ html, body {
     left: 1105px;
 }
 
+
+
+
 /* Wrapper */
 
 #wrapper {
     width: 1440px;
     margin: auto;
-    /*background: blue;*/
-    height: 1660px;
+    background: blue;
+    height: 3960px;
     position: relative;
 }
 
@@ -519,6 +521,60 @@ article.parent img {
     margin-top: 10px;
 
 }
+
+
+
+
+
+/* Bulk Section */ 
+
+
+.bulkWrapper {
+    width: 1440px;
+    height: 2442px;
+    background: orange;
+}
+
+.bulkArticles article {
+    width: 950px;
+    height: 270px;
+    background: pink;
+    margin-top: 50px;
+    position: relative;
+}
+
+.bulkArticles article:first-of-type {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
