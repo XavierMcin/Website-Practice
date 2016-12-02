@@ -186,7 +186,7 @@ html, body {
 }
 
 .header3 nav li a:hover {
-    background: lightslategrey;
+    background: #b8b8b8;
 }
 
 .header3 nav li a {
@@ -278,7 +278,7 @@ html, body {
 #wrapper {
     width: 1440px;
     margin: auto;
-    background: blue;
+    /*background: blue;*/
     height: 3960px;
     position: relative;
 }
@@ -532,19 +532,59 @@ article.parent img {
 .bulkWrapper {
     width: 1440px;
     height: 2442px;
-    background: orange;
 }
 
 .bulkArticles article {
-    width: 950px;
+    width: 900px;
     height: 270px;
-    background: pink;
     margin-top: 50px;
+    position: relative;
+    float: left;
+}
+
+.bulkArticles article div {
+    height: 270px;
+    width: 472px;
+    float: right;
     position: relative;
 }
 
-.bulkArticles article:first-of-type {
-    margin-top: 0;
+.bulkArticles article div h1 {
+    font-weight: lighter;
+    font-size: 23pt;
+    margin-left: 30px;
+    margin-top: 45px;
+}
+
+.bulkArticles article div p {
+    margin-left: 30px;
+    font-size: 10pt;
+}
+
+.bulkArticles article div p:last-of-type {
+    position: relative;
+    top: -20px;
+    color: #b8b8b8;
+    display: inline-block;
+}
+
+.bulkArticles article div p a {
+    margin-top: 10px;
+    position: relative;
+    color: #b8b8b8;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.bulkArticles article div p a:hover {
+   color: #000;
+}
+
+.bulkArticles article div img {
+    position: relative;
+    bottom: 21px;
+    left: 8px;
+    display: inline-block;
 }
 
 
