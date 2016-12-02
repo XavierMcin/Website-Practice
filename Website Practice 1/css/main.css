@@ -279,7 +279,7 @@ html, body {
     width: 1440px;
     margin: auto;
     background: blue;
-    height: 3960px;
+    height: 4960px;
     position: relative;
 }
 
@@ -295,6 +295,7 @@ html, body {
     width: 1440px;
     height: 877px;
     border-bottom: 1px solid #b8b8b8;
+    position: relative;
 }
 
 .featured h2 {
@@ -313,7 +314,6 @@ html, body {
 .featured .thumbnail {
     width: 338px;
     height: 213px;
-    background: orange;
 }
 
 .featured article {
@@ -329,6 +329,13 @@ html, body {
 
 .top article:last-of-type {
     margin-right: 0;
+    position: relative;
+    top: -25px;
+}
+
+.top article:first-of-type {
+    position: relative;
+    top: -25px;
 }
 
 .thumbnail {
@@ -531,8 +538,9 @@ article.parent img {
 
 .bulkWrapper {
     width: 1440px;
-    height: 2442px;
+    height: 2402px;
     position: relative;
+    border-bottom: 1px solid #b8b8b8;
 }
 
 .bulkArticles article {
@@ -548,6 +556,7 @@ article.parent img {
     width: 472px;
     float: right;
     position: relative;
+    text-align: left;
 }
 
 .bulkArticles article div h1 {
@@ -620,7 +629,7 @@ article.parent img {
 
 
 
-
+t 
 
 
 
