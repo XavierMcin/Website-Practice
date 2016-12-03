@@ -15,6 +15,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 /*
@@ -278,8 +279,8 @@ html, body {
 #wrapper {
     width: 1440px;
     margin: auto;
-    background: blue;
-    height: 6960px;
+    /*background: blue;*/
+    height: 6660px;
     position: relative;
 }
 
@@ -700,7 +701,7 @@ article.parent img {
 .socialMedia {
     width: 1440px;
     height: 292px;
-    background: purple;
+    background: #f2f2f2;
     margin-top: 70px;
 }
 
@@ -802,14 +803,66 @@ article.parent img {
 
 
 
+.donate {
+    width: 1440px;
+    height: 292px;
+    background: #f2f2f2;
+    margin-top: 70px;
+}
+
+.donate h1 , .donate p {
+    margin: 0;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+.donate p {
+    margin-top: 15px;
+    font-size: 18pt;
+    font-weight: lighter;
+    width: 900px;
+}
 
 
+/* Footer */
 
 
+footer {
+    width: 1440px;
+    height: 135px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
 
+footer p {
+    font-size: 12pt;
+}
 
+footer p:first-of-type {
+    margin: 0;
+}
 
+footer p:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: -15px;
+}
 
+footer p:nth-child(4) {
+    position: relative;
+    top: -15px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #b8b8b8;
+}
+
+footer p a:hover {
+    color: #000;
+}
 
 
 
