@@ -278,8 +278,8 @@ html, body {
 #wrapper {
     width: 1440px;
     margin: auto;
-    /*background: blue;*/
-    height: 4960px;
+    background: blue;
+    height: 6960px;
     position: relative;
 }
 
@@ -653,6 +653,10 @@ article.parent img {
     color: #b8b8b8;
 }
 
+#afterBulk p:first-of-type a:hover {
+    color: #222;
+}
+
 #afterBulk p:nth-child(2) {
     color: #222;
     margin-top: 30px;
@@ -683,17 +687,93 @@ article.parent img {
 
 
 
+/* big bottom image */
+
+.bottomImage {
+    margin-top: 40px;
+}
 
 
 
+/* social media section*/
+
+.socialMedia {
+    width: 1440px;
+    height: 292px;
+    background: purple;
+    margin-top: 70px;
+}
+
+.socialMedia h1 , .socialMedia p {
+    margin: 0;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+.socialMedia p {
+    margin-top: 15px;
+    font-size: 18pt;
+    font-weight: lighter;
+    width: 700px;
+}
 
 
 
+/* Popular section */
 
 
 
+.popular {
+    width: 1440px;
+    height: 400px;
+    background: lightblue;
+    /*text-align: center;*/
+    margin-top: 70px;
+    position: relative;
+}
 
+.popular h1 {
+    margin: 0;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    text-align: center;
+}
 
+.popular article {
+    display: inline-block;
+    height: 314px;
+    background: orange;
+    width: 338px;
+    margin-right: 25px;
+    position: relative;
+    top: 42px;
+}
+
+.popular article h2 {
+    font-size: 14pt;
+    font-weight: lighter;
+}
+
+.popular article:last-of-type {
+    margin-right: 0;
+}
+
+.popular .thumbnail.thumb5 {
+    background-image: url(../img/Cabins/Popular/pexels-photo-175997.jpeg);
+}
+
+.popular .thumbnail.thumb6 {
+    background-image: url(../img/Cabins/Popular/pexels-photo-30823.jpg);
+}
+
+.popular .thumbnail.thumb7 {
+    background-image: url(../img/Cabins/Popular/pexels-photo-24482.jpg);
+}
+
+.popular .thumbnail.thumb8 {
+    background-image: url(../img/Cabins/Popular/pexels-photo-42152.jpeg);
+}
 
 
 
