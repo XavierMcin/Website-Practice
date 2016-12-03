@@ -727,8 +727,6 @@ article.parent img {
 .popular {
     width: 1440px;
     height: 400px;
-    background: lightblue;
-    /*text-align: center;*/
     margin-top: 70px;
     position: relative;
 }
@@ -743,11 +741,26 @@ article.parent img {
 .popular article {
     display: inline-block;
     height: 314px;
-    background: orange;
     width: 338px;
     margin-right: 25px;
     position: relative;
     top: 42px;
+}
+
+.popular article p {
+    position: relative;
+    bottom: 20px;
+    color: #b8b8b8;
+    display: inline-block;
+}
+
+.popular article p a {
+    text-decoration: none;
+    color: #b8b8b8;
+}
+
+.popular article p a:hover {
+    color: #000;
 }
 
 .popular article h2 {
@@ -757,6 +770,13 @@ article.parent img {
 
 .popular article:last-of-type {
     margin-right: 0;
+}
+
+.popular img {
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    left: 5px;
 }
 
 .popular .thumbnail.thumb5 {
@@ -776,6 +796,9 @@ article.parent img {
 }
 
 
+
+
+/* Donate Section */
 
 
 
