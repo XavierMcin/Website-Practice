@@ -117,7 +117,13 @@ header {
     width: 100%;
     position: fixed;
     z-index: 10;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #b8b8b8;
+    transition: height .1s linear, background .1s ease-in-out;
+}
+
+header.scrolling {
+    height: 50px;
+    background: #FFF;
 }
 
 header img, header h2 {
@@ -132,6 +138,19 @@ header > div{
     position: relative;
 }
 
+.headerWrapper {
+    position: fixed;
+    z-index: 11;
+    margin: auto;
+    left: 50%;
+    margin-left: -720px;
+    top: 0px;
+    transition: top .1s linear;
+}
+
+.headerWrapper.scrolling {
+    top: -50px;
+}
 .topLeft {
     width: 55%;
     height: 99px;
@@ -148,6 +167,11 @@ header > div{
     display: inline-block;
     position: relative;
     top: 25px;
+    transition: top .1s linear;
+}
+
+.topLeft > img.scrolling {
+    top: 55px;
 }
 
 .topLeft img:hover {
@@ -161,6 +185,13 @@ header > div{
     left: 15px;
     font-size: 20pt;
     color: #FFF;
+    transition: top .1s linear, color .1s linear, font-size .1s linear;
+}
+
+.topLeft h2.scrolling {
+    top: 60px;
+    color: #000;
+    font-size: 16pt;
 }
 
 .topLeft h2:hover {
@@ -171,8 +202,8 @@ header > div{
     height: 100px;
     width: 300px;
     float: right;
-    border-left: 1px solid #FFF;
-    border-right: 1px solid #FFF;
+    border-left: 1px solid #b8b8b8;
+    border-right: 1px solid #b8b8b8;
     text-align: center;
 }
 
@@ -185,6 +216,11 @@ header > div{
     position: relative;
     top: 25px;
     opacity: .8;
+    transition: top .1s linear;
+}
+
+.random img.scrolling {
+    top: 50px;
 }
 
 .random h3 {
@@ -195,6 +231,12 @@ header > div{
     letter-spacing: 1px;
     left: 5px;
     color: #b8b8b8;
+    transition: top .1s linear, color .1s linear;
+}
+
+.random h3.scrolling {
+    top: 55px;
+    color: #000;
 }
 
 .topRight {
@@ -207,8 +249,8 @@ header > div{
 
 .topRight div {
     height: 49px;
-    border-bottom: 1px solid #FFF;
-    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #b8b8b8;
+    border-right: 1px solid #b8b8b8;
 }
 
 
@@ -281,7 +323,7 @@ header > div{
     display: inline-block;
     width: 161px;
     height: 50px;
-    border-right: 1px solid #FFF;
+    border-right: 1px solid #b8b8b8;
     position: relative;
     text-align: center;
 }
@@ -306,6 +348,10 @@ header > div{
     top: 15px;
 }
 
+.topRight nav span.scrolling {
+    color: #000;
+}
+
 
 /* hidden menu */
 
@@ -313,13 +359,17 @@ header > div{
 .dropDown {
     height: 0px;
     width: 100%;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #b8b8b8;
     z-index: 9;
     position: fixed;
     top: 100px;
     text-align: center;
     overflow: hidden;
-    transition: height .2s linear;
+    transition: top .1s linear, height .2s linear;
+}
+
+.dropDown.scrolling {
+    top: 50px;
 }
 
 .dropDown.appear {
