@@ -370,10 +370,15 @@ header > div{
 
 .dropDown.scrolling {
     top: 50px;
+    background: #FFF;
 }
 
 .dropDown.appear {
     height: 50px;
+}
+
+.dropdown.appear.scrolling {
+    background: #FFF;
 }
 
 .dropDown ul {
@@ -392,6 +397,10 @@ header > div{
     display: block;
     text-decoration: none;
     color: #FFF;
+}
+
+.dropDown ul li a.scrolling {
+    color: #000;
 }
 
 .dropDown ul li a:hover {
