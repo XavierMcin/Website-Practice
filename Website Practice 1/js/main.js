@@ -21,6 +21,7 @@ $(function(){
 			$('.menu-button').attr('src', 'img/Icons/Black/menu-button.png');
 			$('.random img').attr('src', 'img/Icons/Black/repeat.png')
 			$('.dropDown ul li a').addClass('scrolling');
+			$('.topRight nav ul li a').addClass('scrolling');
 		} if (target == 0) {
 			$('.headerWrapper').removeClass('scrolling');
 			$('.topLeft > img').removeClass('scrolling');
@@ -33,6 +34,7 @@ $(function(){
 			$('.menu-button').attr('src', 'img/Icons/White/menu-button.png');
 			$('.random img').attr('src', 'img/Icons/White/repeat.png')
 			$('.dropDown ul li a').removeClass('scrolling');
+			$('.topRight nav ul li a').removeClass('scrolling');
 		}
 	});
 });
