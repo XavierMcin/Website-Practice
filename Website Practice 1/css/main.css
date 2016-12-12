@@ -333,7 +333,7 @@ header > div{
     position: relative;
     top: 0;
     left: 0;
-    height: 49px;
+    height: 50px;
     width: 161px;
 }
 
@@ -700,6 +700,22 @@ article.parent img {
     position: relative;
 }
 
+.leftImage a.element {
+    margin: auto;
+    height: 268px;
+    width: 426px;
+    display: block;
+    transition: height .25s ease-in-out, width .25s ease-in-out, border .25s ease-in-out;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.leftImage:hover a.element {
+    height: 248px;
+    width: 406px;
+    margin: auto;
+    border: 1px solid rgba(255,255,255,1);
+}
+
 .leftImage div {
     background-image: url(../img/shutters-caribbean-architecture-door-37827.jpeg);
     background-size: cover;
@@ -720,6 +736,22 @@ article.parent img {
     width: 719.5px;
     float: right;
     display: inline-block;
+}
+
+.rightImage a.element {
+    margin: auto;
+    height: 268px;
+    width: 426px;
+    display: block;
+    transition: height .25s ease-in-out, width .25s ease-in-out, border .25s ease-in-out;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.rightImage:hover a.element {
+    height: 248px;
+    width: 406px;
+    margin: auto;
+    border: 1px solid rgba(255,255,255,1);
 }
 
 .rightImage div {
@@ -793,6 +825,23 @@ article.parent img {
     color: #b8b8b8;
     text-decoration: none;
     font-size: 10pt;
+}
+
+.bulkArticles a.element {
+    height: 268px;
+    width: 426px;
+    display: block;
+    transition: height .25s ease-in-out, width .25s ease-in-out, border .25s ease-in-out, left .25s ease-in-out;
+    border: 1px solid rgba(255,255,255,0);
+    position: absolute;
+    left: 0;
+}
+
+.bulkArticles a.element:hover {
+    height: 248px;
+    width: 406px;
+    left: 10px;
+    border: 1px solid rgba(255,255,255,1);
 }
 
 .bulkArticles article div p a:hover {
@@ -932,13 +981,63 @@ article.parent img {
 
 /* Popular section */
 
+.popular .thumbnail {
+    width: 338px;
+    height: 213px;
+}
 
+.popular article {
+    display: inline-block;
+    margin-right: 25px;
+    height: 314px;
+}
 
 .popular {
-    width: 1440px;
-    height: 400px;
-    margin-top: 70px;
+    margin-top: 100px;
+}
+
+.popular article:last-of-type {
+    margin-right: 0;
     position: relative;
+}
+
+.popular article:first-of-type {
+    position: relative;
+}
+
+.thumbnail {
+    margin: 0;
+}
+
+.thumbnail a.element {
+    margin: auto;
+    height: 213px;
+    width: 338px;
+    display: block;
+    transition: height .25s ease-in-out, width .25s ease-in-out, border .25s ease-in-out;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.thumbnail:hover a.element {
+    height: 193px;
+    width: 318px;
+    margin: auto;
+    border: 1px solid rgba(255,255,255,1);
+}
+
+
+.popular article h2 {
+    width: 338px;
+    position: relative;
+    top: 0px;
+    font-size: 14pt;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.popular article h2 a {
+    text-decoration: none;
+    color: #000;
 }
 
 .popular h1 {
@@ -946,20 +1045,13 @@ article.parent img {
     font-weight: lighter;
     letter-spacing: 4px;
     text-align: center;
-}
-
-.popular article {
-    display: inline-block;
-    height: 314px;
-    width: 338px;
-    margin-right: 25px;
-    position: relative;
-    top: 42px;
+    padding-bottom: 20px;
+    font-size: 17pt;
 }
 
 .popular article p {
     position: relative;
-    bottom: 20px;
+    bottom: 30px;
     color: #b8b8b8;
     display: inline-block;
 }
@@ -985,8 +1077,26 @@ article.parent img {
 .popular img {
     display: inline-block;
     position: relative;
-    bottom: 20px;
-    left: 5px;
+    top: -30px;
+    left: 3px;
+}
+
+.popular .thumbnail a.element {
+    margin: auto;
+    height: 213px;
+    width: 338px;
+    bottom: 0px;
+    position: relative;
+    display: block;
+    transition: height .25s ease-in-out, width .25s ease-in-out, border .25s ease-in-out;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.thumbnail:hover a.element {
+    height: 193px;
+    width: 318px;
+    margin: auto;
+    border: 1px solid rgba(255,255,255,1);
 }
 
 .popular .thumbnail.thumb5 {
