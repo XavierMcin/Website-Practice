@@ -112,121 +112,318 @@ html, body {
 
 /* NAVIGATION */
 
-#navigation {
+header {
     height: 100px;
     width: 100%;
-    background: transparent;
-    display: inline-block;
-    font-size: 0;
+    position: fixed;
     z-index: 10;
-    position: absolute;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #b8b8b8;
+    transition: height .1s linear, background .1s ease-in-out;
 }
 
-.topHeader {
-    display: inline-block;
-    border-bottom: 1px solid #FFF;
-    border-right: 1px solid #FFF;
-}
-
-.header1 {
-    width: 715px;
-    background: transparent;
-    height: 100px;
-}
-
-.header2 {
-    height: 100px;
-    width: 299px;
-    background: transparent;
-}
-
-.header3 {
-    height: 100px;
-    width: 599px;
-    background: transparent;
-    position: relative;
-}
-
-.header4 {
-    height: 100px;
-    width: 304px;
-    background: transparent;
-    border-right: 0;
-}
-
-.header3 div {
-    width: 599px;
+header.scrolling {
     height: 50px;
-    background: transparent;
+    background: #FFF;
 }
 
-.header3 nav {
-    width: 599px;
-    height: 50px;
-    background: transparent;
-    position: absolute;
-    bottom: 0;
-}
-
-.header3 ul {
+header img, header h2 {
+    margin: 0;
     padding: 0;
 }
 
-.header3 nav li {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-    border-top: 1px solid #FFF;
-    border-right: 1px solid #FFF;
-}
-
-.header3 nav li a p {
+header > div{
+    height: 100px;
+    width: 1440px;
+    margin: auto;
     position: relative;
-    top: 3px;
 }
 
-.header3 nav li a:hover {
-    background: #b8b8b8;
+.headerWrapper {
+    position: fixed;
+    z-index: 11;
+    margin: auto;
+    left: 50%;
+    margin-left: -720px;
+    top: 0px;
+    transition: top .1s linear;
 }
 
-.header3 nav li a {
-    text-decoration: none;
+.headerWrapper.scrolling {
+    top: -50px;
+}
+.topLeft {
+    width: 55%;
+    height: 99px;
+    display: inline-block;
+    position: relative;
+}
+
+.topLeft > img {
+    opacity: .6;
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    -o-transform: scale(.7);
+    transform: scale(.7);
+    display: inline-block;
+    position: relative;
+    top: 25px;
+    transition: top .1s linear;
+}
+
+.topLeft > img.scrolling {
+    top: 55px;
+}
+
+.topLeft img:hover {
+    opacity: 1;
+}
+
+.topLeft h2 {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    left: 15px;
+    font-size: 20pt;
     color: #FFF;
+    transition: top .1s linear, color .1s linear, font-size .1s linear;
+}
+
+.topLeft h2.scrolling {
+    top: 60px;
+    color: #000;
+    font-size: 16pt;
+}
+
+.topLeft h2:hover {
+    color: #b8b8b8;
+}
+
+.random {
+    height: 100px;
+    width: 300px;
+    float: right;
+    border-left: 1px solid #b8b8b8;
+    border-right: 1px solid #b8b8b8;
+    text-align: center;
+}
+
+.random img {
+    display: inline-block;
+    -webkit-transform: rotateZ(90deg);
+    -moz-transform: rotateZ(90deg);
+    -o-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+    position: relative;
+    top: 25px;
+    opacity: .8;
+    transition: top .1s linear;
+}
+
+.random img.scrolling {
+    top: 50px;
+}
+
+.random h3 {
+    display: inline-block;
     font-size: 10pt;
     position: relative;
+    top: 30px;
+    letter-spacing: 1px;
+    left: 5px;
+    color: #b8b8b8;
+    transition: top .1s linear, color .1s linear;
+}
+
+.random h3.scrolling {
+    top: 55px;
+    color: #000;
+}
+
+.topRight {
+    width: 45%;
+    height: 100px;
+    float: right;
     display: inline-block;
-    height: 49px;
-    width: 149px;
+    position: relative;
 }
 
-.header3 nav li:nth-child(1) {
+.topRight div {
     height: 49px;
-    width: 149px; 
+    border-bottom: 1px solid #b8b8b8;
+    border-right: 1px solid #b8b8b8;
+}
+
+
+.topRight img {
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    -o-transform: scale(.7);
+    transform: scale(.7);
+    margin-right: 10px;
+    position: relative;
+    opacity: .6;
+    top: 12px;
+    left: 40px;
+}
+
+.topRight img:hover {
+    opacity: 1;
+}
+
+.topRight a {
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    position: relative;
+    top: 12px;
+    left: 100px;
+}
+
+.topRight a img {
+    transform: scale(1.1);
+    position: relative;
+    top: -3px;
+    left: 10px;
+}
+
+.topRight input {
+    width: 110px;
+    position: relative;
+    top: 12px;
+    right: -150px;
+    border: none;
     background: transparent;
+    color: #FFF;
+    outline: none;
 }
 
-.header3 nav li:nth-child(2) {
+.topRight input + img {
+    transform: scale(1);
+    position: relative;
+    float: right;
+    left: -20px;
+    transform: rotateY(180deg);
+}
+
+
+
+.topRight nav {
     height: 49px;
-    width: 149px; 
-    background: transparent;
+    font-size: 0;
 }
 
-.header3 nav li:nth-child(3) {
-    height: 49px;
-    width: 149px; 
-    background: transparent;
+.topRight nav ul {
+    margin: 0;
+    padding: 0;
 }
 
-.header3 nav li:nth-child(4) {
-    height: 49px;
-    width: 149px; 
-    background: transparent;
-    border-right: 0;
+.topRight nav ul li {
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    width: 161px;
+    height: 50px;
+    border-right: 1px solid #b8b8b8;
+    position: relative;
+    text-align: center;
+}
+
+.topRight nav ul li a {
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 161px;
+}
+
+.topRight nav ul li a:hover {
+    background: rgba(255,255,255,.2);
+}
+
+.topRight nav ul li a.scrolling:hover {
+    background: rgba(100,100,100,.1);
+}
+
+.topRight nav span {
+    font-size: 10pt;
+    letter-spacing: 1px;
+    position: relative;
+    top: 15px;
+}
+
+.topRight nav span.scrolling {
+    color: #000;
 }
 
 
+/* hidden menu */
 
+
+.dropDown {
+    height: 0px;
+    width: 100%;
+    border-bottom: 1px solid #b8b8b8;
+    z-index: 9;
+    position: fixed;
+    top: 100px;
+    text-align: center;
+    overflow: hidden;
+    transition: top .1s linear, height .2s linear;
+}
+
+.dropDown.scrolling {
+    top: 50px;
+    background: #FFF;
+}
+
+.dropDown.appear {
+    height: 50px;
+}
+
+.dropdown.appear.scrolling {
+    background: #FFF;
+}
+
+.dropDown ul {
+    margin: 0;
+}
+
+.dropDown ul li {
+    list-style: none;
+    display: inline-block;
+    height: 50px;
+    position: relative;
+}
+
+.dropDown ul li a {
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.dropDown ul li a.scrolling {
+    color: #000;
+}
+
+.dropDown ul li a.scrolling:hover {
+    background: rgba(100,100,100,.1);
+}
+
+
+.dropDown ul li a:hover {
+    background: rgba(255,255,255,.2);
+}
+
+.dropDown span {
+    margin: 0;
+    position: relative;
+    top: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 10pt;
+}
 
 
 /* BANNER IMAGE */
@@ -243,6 +440,7 @@ html, body {
     background-size: cover;
     position: relative;
     top: 0;
+    z-index: -9;
 
 }
 
@@ -357,9 +555,20 @@ html, body {
     background-image: url(../img/pexels-photo.jpg);
 }
 
-.thumbnail a {
+.thumbnail a.element {
+    margin: auto;
     height: 213px;
+    width: 338px;
     display: block;
+    transition: height .25s ease-in-out, width .25s ease-in-out, border .25s ease-in-out;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.thumbnail:hover a.element {
+    height: 193px;
+    width: 318px;
+    margin: auto;
+    border: 1px solid rgba(255,255,255,1);
 }
 
 
@@ -491,6 +700,22 @@ article.parent img {
     position: relative;
 }
 
+.leftImage a.element {
+    margin: auto;
+    height: 268px;
+    width: 426px;
+    display: block;
+    transition: height .25s ease-in-out, width .25s ease-in-out, border .25s ease-in-out;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.leftImage:hover a.element {
+    height: 248px;
+    width: 406px;
+    margin: auto;
+    border: 1px solid rgba(255,255,255,1);
+}
+
 .leftImage div {
     background-image: url(../img/shutters-caribbean-architecture-door-37827.jpeg);
     background-size: cover;
@@ -511,6 +736,22 @@ article.parent img {
     width: 719.5px;
     float: right;
     display: inline-block;
+}
+
+.rightImage a.element {
+    margin: auto;
+    height: 268px;
+    width: 426px;
+    display: block;
+    transition: height .25s ease-in-out, width .25s ease-in-out, border .25s ease-in-out;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.rightImage:hover a.element {
+    height: 248px;
+    width: 406px;
+    margin: auto;
+    border: 1px solid rgba(255,255,255,1);
 }
 
 .rightImage div {
@@ -586,6 +827,23 @@ article.parent img {
     font-size: 10pt;
 }
 
+.bulkArticles a.element {
+    height: 268px;
+    width: 426px;
+    display: block;
+    transition: height .25s ease-in-out, width .25s ease-in-out, border .25s ease-in-out, left .25s ease-in-out;
+    border: 1px solid rgba(255,255,255,0);
+    position: absolute;
+    left: 0;
+}
+
+.bulkArticles a.element:hover {
+    height: 248px;
+    width: 406px;
+    left: 10px;
+    border: 1px solid rgba(255,255,255,1);
+}
+
 .bulkArticles article div p a:hover {
    color: #000;
 }
@@ -602,25 +860,42 @@ article.parent img {
 
 /* aside bar */
 
-
-
-
 .sticky1 {
     width: 454px;
     height: 454px;
-    background: purple;
+    background: #f2f2f2;
     right: 0;
     top: 50px;
     position: absolute;
 }
 
+.sticky1.topFixed {
+    position: fixed;
+    top: 100px;
+    right: 232px;
+}
+
+.sticky1.stuckBottom {
+    top: 1645px;
+}
+
 .sticky2 {
-    background: purple;
+    background: #f2f2f2;
     width: 454px;
     height: 241px;
     position: absolute;
     top: 539px;
     right: 0;
+}
+
+.sticky2.topFixed {
+    top: 589px;
+    right: 232px;
+    position: fixed;
+}
+
+.sticky2.stuckBottom {
+    top: 2135px;
 }
 
 
@@ -723,13 +998,63 @@ article.parent img {
 
 /* Popular section */
 
+.popular .thumbnail {
+    width: 338px;
+    height: 213px;
+}
 
+.popular article {
+    display: inline-block;
+    margin-right: 25px;
+    height: 314px;
+}
 
 .popular {
-    width: 1440px;
-    height: 400px;
-    margin-top: 70px;
+    margin-top: 100px;
+}
+
+.popular article:last-of-type {
+    margin-right: 0;
     position: relative;
+}
+
+.popular article:first-of-type {
+    position: relative;
+}
+
+.thumbnail {
+    margin: 0;
+}
+
+.thumbnail a.element {
+    margin: auto;
+    height: 213px;
+    width: 338px;
+    display: block;
+    transition: height .25s ease-in-out, width .25s ease-in-out, border .25s ease-in-out;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.thumbnail:hover a.element {
+    height: 193px;
+    width: 318px;
+    margin: auto;
+    border: 1px solid rgba(255,255,255,1);
+}
+
+
+.popular article h2 {
+    width: 338px;
+    position: relative;
+    top: 0px;
+    font-size: 14pt;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.popular article h2 a {
+    text-decoration: none;
+    color: #000;
 }
 
 .popular h1 {
@@ -737,20 +1062,13 @@ article.parent img {
     font-weight: lighter;
     letter-spacing: 4px;
     text-align: center;
-}
-
-.popular article {
-    display: inline-block;
-    height: 314px;
-    width: 338px;
-    margin-right: 25px;
-    position: relative;
-    top: 42px;
+    padding-bottom: 20px;
+    font-size: 17pt;
 }
 
 .popular article p {
     position: relative;
-    bottom: 20px;
+    bottom: 30px;
     color: #b8b8b8;
     display: inline-block;
 }
@@ -776,8 +1094,26 @@ article.parent img {
 .popular img {
     display: inline-block;
     position: relative;
-    bottom: 20px;
-    left: 5px;
+    top: -30px;
+    left: 3px;
+}
+
+.popular .thumbnail a.element {
+    margin: auto;
+    height: 213px;
+    width: 338px;
+    bottom: 0px;
+    position: relative;
+    display: block;
+    transition: height .25s ease-in-out, width .25s ease-in-out, border .25s ease-in-out;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.thumbnail:hover a.element {
+    height: 193px;
+    width: 318px;
+    margin: auto;
+    border: 1px solid rgba(255,255,255,1);
 }
 
 .popular .thumbnail.thumb5 {
@@ -863,40 +1199,6 @@ footer p a {
 footer p a:hover {
     color: #000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
