@@ -860,25 +860,42 @@ article.parent img {
 
 /* aside bar */
 
-
-
-
 .sticky1 {
     width: 454px;
     height: 454px;
-    background: purple;
+    background: #f2f2f2;
     right: 0;
     top: 50px;
     position: absolute;
 }
 
+.sticky1.topFixed {
+    position: fixed;
+    top: 100px;
+    right: 232px;
+}
+
+.sticky1.stuckBottom {
+    top: 1645px;
+}
+
 .sticky2 {
-    background: purple;
+    background: #f2f2f2;
     width: 454px;
     height: 241px;
     position: absolute;
     top: 539px;
     right: 0;
+}
+
+.sticky2.topFixed {
+    top: 589px;
+    right: 232px;
+    position: fixed;
+}
+
+.sticky2.stuckBottom {
+    top: 2135px;
 }
 
 

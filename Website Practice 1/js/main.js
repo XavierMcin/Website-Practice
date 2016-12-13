@@ -35,6 +35,20 @@ $(function(){
 			$('.random img').attr('src', 'img/Icons/White/repeat.png')
 			$('.dropDown ul li a').removeClass('scrolling');
 			$('.topRight nav ul li a').removeClass('scrolling');
+		} if (target >= 2300) {
+			$('.sticky1').addClass('topFixed');
+			$('.sticky2').addClass('topFixed');
+		} if (target < 2300) {
+			$('.sticky1').removeClass('topFixed');
+			$('.sticky2').removeClass('topFixed');
+		} if (target >= 3930) {
+			$('.sticky1').removeClass('topFixed');
+			$('.sticky2').removeClass('topFixed');
+			$('.sticky1').addClass('stuckBottom');
+			$('.sticky2').addClass('stuckBottom');
+		} if (target < 3930) {
+			$('.sticky1').removeClass('stuckBottom');
+			$('.sticky2').removeClass('stuckBottom');
 		}
 	});
 });
